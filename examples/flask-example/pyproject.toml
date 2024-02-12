@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "flask-example"
+version = "0.1.0"
+description = ""
+authors = ["Md Sulaiman <infosulaimanbd@gmail.com>"]
+readme = "README.md"
+packages = [{include = ".", from = "." }]
+[tool.poetry.dependencies]
+python = "^3.11.7"
+flask = "^2.3.3"
+kengine-opentelemetry = {path = "../../", develop = true}
+opentelemetry-distro = "^0.42b0"
+opentelemetry-instrumentation-flask = "^0.42b0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
